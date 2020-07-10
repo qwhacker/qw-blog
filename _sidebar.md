@@ -1,36 +1,39 @@
-* OS
-  * [Linux](./docs/os/linux/linux.md)
-  * [Mac](./docs/os/mac/mac.md)
-  * [Windows](./docs/os/windows/windows.md)
-  
-* Dev
-  * 后端
-    * Java
-      * jdk-8
-        * [lambda](./docs/dev/back/java/jdk-8/lambda.md)
-    * Jdbc
-        * [jdbc](./docs/dev/back/jdbc/jdbc.md)
-    * Server
-        * [server](./docs/dev/back/server/server.md)
-  * 前端
-    * Js
-      * javascript
-        * [javascript](./docs/dev/front/js/javascript/javascript.md)
-      * jquery
-        * [jquery](./docs/dev/front/js/jquery/jquery.md)
-      * nodejs
-        * [nodejs](./docs/dev/front/js/nodejs/nodejs.md)
-      * angularjs
-        * [angularjs](./docs/dev/front/js/angularjs/angularjs.md)
-      * react
-        * [react](./docs/dev/front/js/react/react.md)
-      * reactnative
-        * [reactnative](./docs/dev/front/js/reactnative/reactnative.md)
-      * electron
-        * [electron](./docs/dev/front/js/electron/electron.md)
-      * vue
-        * [vue](./docs/dev/front/js/vue/vue.md)
-      * mui
-        * [mui](./docs/dev/front/js/mui/mui.md)
-      * typescript
-        * [typescript](./docs/dev/front/js/typescript/typescript.md)
+
+* dev
+ * back
+  * java
+   * jdk-8
+       * [lambda](./docs/dev/back/java/jdk-8/lambda.md)
+  * jdbc
+      * [jdbc](./docs/dev/back/jdbc/jdbc.md)
+  * server
+      * [server](./docs/dev/back/server/server.md)
+ * front
+  * js
+   * angularjs
+       * [angularjs](./docs/dev/front/js/angularjs/angularjs.md)
+   * electron
+       * [electron](./docs/dev/front/js/electron/electron.md)
+   * javascript
+       * [javascript](./docs/dev/front/js/javascript/javascript.md)
+   * jquery
+       * [jquery](./docs/dev/front/js/jquery/jquery.md)
+   * mui
+       * [mui](./docs/dev/front/js/mui/mui.md)
+   * nodejs
+       * [nodejs](./docs/dev/front/js/nodejs/nodejs.md)
+   * react
+       * [react](./docs/dev/front/js/react/react.md)
+   * reactnative
+       * [reactnative](./docs/dev/front/js/reactnative/reactnative.md)
+   * typescript
+       * [typescript](./docs/dev/front/js/typescript/typescript.md)
+   * vue
+       * [vue](./docs/dev/front/js/vue/vue.md)
+* os
+ * linux
+     * [linux](./docs/os/linux/linux.md)
+ * mac
+     * [mac](./docs/os/mac/mac.md)
+ * windows
+     * [windows](./docs/os/windows/windows.md)
