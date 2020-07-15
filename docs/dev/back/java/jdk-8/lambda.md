@@ -12,22 +12,38 @@ Lambda是一个匿名函数，我们可以把Lambda表达式理解为是一段�
 
 右侧：Lambda表达式中所需执行的功能，即Lambda体
 
-语法格式一：无参数，无返回值
+语法格式一：
+
+无参数，无返回值
 `() -> System.out.println("Hello Lambda!");`
-语法格式二：有一个参数，无返回值
+
+语法格式二：
+
+有一个参数，无返回值
 `(x) -> System.out.println(x)`
-语法格式三：若只有一个参数，小括号可以省略不写
+
+语法格式三：
+
+若只有一个参数，小括号可以省略不写
 `x -> System.out.println(x)`
-语法格式四：有两个参数以上，有返回值，并且Lambda体中有多条语句
+
+语法格式四：
+
+有两个参数以上，有返回值，并且Lambda体中有多条语句
 ```java
 Comparator<Integer> com = (x, y) -> {
     System.out.println("多行语句");
     return Integer.compare(x, y);
 };
 ```
-语法格式五：若Lambda体中有一条语句，return和大括号都可以省略不写
+语法格式五：
+
+若Lambda体中有一条语句，return和大括号都可以省略不写
 `Comparator<Integer> com = (x, y) ->  Integer.compare(x, y);`
-语法格式六：Lambda表达式的参数列表的数据类型可以省略不写，因为JVM编译器通过上下文推断出，数据类型，即“类型推断”
+
+语法格式六：
+
+Lambda表达式的参数列表的数据类型可以省略不写，因为JVM编译器通过上下文推断出，数据类型，即“类型推断”
 `Comparator<Integer> com = (Integer x, Integer y) ->  Integer.compare(x, y);`
 
 上联：左右遇一括号省
@@ -105,14 +121,18 @@ public interface IFunction2<T, R> {
 ```
 
 Java8内置的四大核心函数式接口
+
 Consumer<T>：消费型接口
-    void accept(T t);
+    `void accept(T t);`
+    
 Supplier<T>：供给型接口
-    T get();
+    `T get();`
+    
 Function<T,R>：函数型接口
-    R apply(T t);
+    `R apply(T t);`
+    
 Predicate<T>：断言型接口
-    boolean test(T t);
+    `boolean test(T t);`
 ```java
 //Consumer<T> 消费型接口
 @Test
@@ -173,15 +193,22 @@ public List<String> filterStr(List<String> list, Predicate<String> pre) {
 ```
 
 方法引用
+
 若Lambda体中的内容有方法已经实现了，我们可以使用“方法引用”（可以理解为方法引用是Lambda表达式的另外一种表现形式），
 使用操作符“：：”将方法名和对象或类的名字分隔开来
+
 主要有三种语法格式：
+
 对象：：实例方法名
+
 类：：静态方法名
+
 类：：实例方法名
 
 注意：
+
 1.Lambda体中调用方法的参数列表与返回值类型，要与函数式接口中抽象方法的参数列表和返回值类型保持一致
+
 2.若Lambda参数列表中的第一个参数是实例方法的调用者，而第二个参数是实例方法的参数时，可以使用ClassName::method
 ```java
 //方法引用
@@ -206,13 +233,18 @@ public void test0008() {
 ```
 
 构造器引用
+
 格式：
-ClassName::new
+
+`ClassName::new`
+
 注意：需要调用的构造器的参数列表要与函数式接口中抽象方法的参数列表保持一致
 
 数组引用
+
 格式：
-Type::new;
+
+`Type::new;`
 ```java
 @Test
 public void test0009() {
